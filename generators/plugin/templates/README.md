@@ -98,6 +98,10 @@ Screw something up? You can reset your environment with the following. It will s
 make reset
 ```
 
+## Using GitHub Actions
+
+GitHub Actions are used for automated testing on GitHub. Before pushing to GitHub the first time ensure you have initialized the project with `make start` to avoid the actions failing.
+
 ## Preparing for release
 
 To generate a .zip that can be uploaded through any normal WordPress plugin installation workflow, simply run the following:
