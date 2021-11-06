@@ -136,6 +136,7 @@ module.exports = class extends Generator {
     [
       '_.vscode/extensions.json',
       '_.vscode/settings.json',
+      '_.github/workflows/testing.yml',
       'src/scripts/starter-script.js',
       'src/lib/.githold',
       '_.eslintrc.js',
@@ -143,7 +144,7 @@ module.exports = class extends Generator {
       '_.prettierrc.json',
       'phpcs.xml',
       'phpunit.xml.dist',
-      '.zipignore',
+      '_.zipignore',
     ].forEach((template) => {
       let destination = template;
       if (destination[0] == '_') {

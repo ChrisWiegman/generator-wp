@@ -20,9 +20,6 @@
  */
 function <%= orgPrefix %>_<%= pluginUnderscore %>_loader() {
 
-	$plugin_url  = plugin_dir_url( __FILE__ );
-	$plugin_info = get_file_data( __FILE__, array( 'Version' => 'Version' ) );
-
 	// Load the text domain.
 	load_plugin_textdomain( '<%= pluginDash %>', false, dirname( dirname( __FILE__ ) ) . '/languages' );
 

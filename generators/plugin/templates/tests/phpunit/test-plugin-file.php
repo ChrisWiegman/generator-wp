@@ -29,8 +29,6 @@ class PluginFileTest extends TestCase {
 	public function test_<%= orgPrefix %>_<%= pluginUnderscore %>_loader() {
 
 		Monkey\Functions\expect( 'load_plugin_textdomain' )->once();
-		Monkey\Functions\expect( 'plugin_dir_url' )->once();
-		Monkey\Functions\expect( 'get_file_data' )->once();
 
 		<%= orgPrefix %>_<%= pluginUnderscore %>_loader();
 
