@@ -222,3 +222,4 @@ Docker/debug
 # Build files
 /build/
 clover.xml
+/languages/
