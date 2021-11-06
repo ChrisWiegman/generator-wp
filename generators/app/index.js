@@ -14,8 +14,6 @@ module.exports = class extends Generator {
         // eslint-disable-next-line max-len
         '\tyo wp:core - A basic WordPress install for testing products/code/etc.\n',
         '\tyo wp:plugin - A general purpose WordPress plugin\n',
-        // eslint-disable-next-line max-len
-        '\tyo wp:ecom-plugin - A WooCommerce plugin with a woo store ready for dev\n',
     ));
   }
 };
