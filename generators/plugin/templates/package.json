@@ -1,0 +1,23 @@
+{
+  "name": "<%= pluginDash %>",
+  "description": "<%= description %>",
+  "repository": {
+    "type": "git",
+    "url": "<%= repoLocation %>"
+  },
+  "author": "<%= authorName %> <<%= authorEmail %>>",
+  "license": "GPLv2",
+  "homepage": "<%= projectHome %>",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "lint": "eslint './src/**/*.{js,jsx}'",
+    "lint:fix": "eslint './src/**/*.{js,jsx}' --fix",
+    "style": "prettier --check .",
+    "style:fix": "prettier --write ."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "generator-wp",
+  "version": "1.0.0",
+  "description": "WordPress project generator for quick onboarding.",
+  "files": [
+    "generators"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisWiegman/generator-wp.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Chris Wiegman <chris@chriswiegman.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisWiegman/generator-wp/issues"
+  },
+  "homepage": "https://github.com/ChrisWiegman/generator-wp#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "eslint": "^8.2.0",
+    "eslint-config-google": "^0.14.0",
+    "title-case": "^3.0.3",
+    "yeoman-generator": "^5.4.2"
+  }
+}
