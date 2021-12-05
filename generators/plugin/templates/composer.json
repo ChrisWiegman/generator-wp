@@ -1,9 +1,10 @@
 {
   "name": "<%= longOrgPrefixLowercase %>/<%= pluginDash %>",
   "description": "<%= description %>",
+  "minimum-stability": "stable",
   "require-dev": {
     "phpunit/phpunit": "^9.5.10",
-    "brain/monkey": "^2.6.0",
+    "brain/monkey": "^2.6.1",
     "wpengine/wpengine-coding-standards": "^1.0.0"
   }
 }
