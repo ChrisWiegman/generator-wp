@@ -15,7 +15,7 @@ build-pot-file: | lando-start
 	lando wp --path=./wordpress i18n make-pot --exclude="vender,wordpress,tests,node_modules,languages,.vscode,Docker" . ./languages/<%= pluginDash %>.pot
 
 .PHONY: clean
-clean: clean-assets clean-build  ## Removes all build files and the plugin files. This is destructive.
+clean: clean-assets clean-build clean-release ## Removes all build files and the plugin files. This is destructive.
 
 .PHONY: clean-assets
 clean-assets:
@@ -30,6 +30,11 @@ clean-build:
 		node_modules \
 		wordpress \
 		vendor
+
+.PHONY: clean-release
+clean-release:
+	@echo "Cleaning up release file"
+	rm -f chriswiegman-theme*.zip
 
 .PHONY: destroy
 destroy: ## Destroys the developer environment completely (this is irreversible)
@@ -175,7 +180,7 @@ update-npm:
 	$(DOCKER_RUN) $(NODE_IMAGE) npm update
 
 .PHONY: <%= pluginDash %>-version.zip
-<%= pluginDash %>-version.zip:
+<%= pluginDash %>-version.zip: clean-release
 	@echo "Building release file: <%= pluginDash %>.$(PLUGIN_VERSION).zip"
 	rm -rf <%= pluginDash %>.$(PLUGIN_VERSION).zip
 	PLUGIN_VERSION=$(PLUGIN_VERSION) && cd ../ && zip --verbose -r -x=@<%= pluginDash %>/.zipignore <%= pluginDash %>/<%= pluginDash %>.$$PLUGIN_VERSION.zip <%= pluginDash %>/*
