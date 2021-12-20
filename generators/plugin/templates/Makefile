@@ -182,7 +182,6 @@ update-npm:
 .PHONY: <%= pluginDash %>-version.zip
 <%= pluginDash %>-version.zip: clean-release
 	@echo "Building release file: <%= pluginDash %>.$(PLUGIN_VERSION).zip"
-	rm -rf <%= pluginDash %>.$(PLUGIN_VERSION).zip
 	PLUGIN_VERSION=$(PLUGIN_VERSION) && cd ../ && zip --verbose -r -x=@<%= pluginDash %>/.zipignore <%= pluginDash %>/<%= pluginDash %>.$$PLUGIN_VERSION.zip <%= pluginDash %>/*
 	if [ ! -f ./<%= pluginDash %>.$(PLUGIN_VERSION).zip  ]; then \
 		echo "file not available"; \
