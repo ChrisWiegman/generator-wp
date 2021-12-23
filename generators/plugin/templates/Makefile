@@ -29,7 +29,8 @@ clean-build:
 	rm -rf \
 		node_modules \
 		wordpress \
-		vendor
+		vendor \
+		.phpunit.result.cache
 
 .PHONY: clean-release
 clean-release:
