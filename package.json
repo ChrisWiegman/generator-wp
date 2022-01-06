@@ -23,6 +23,6 @@
     "eslint": "^8.6.0",
     "eslint-config-google": "^0.14.0",
     "title-case": "^3.0.3",
-    "yeoman-generator": "^5.4.2"
+    "yeoman-generator": "^5.5.2"
   }
 }
