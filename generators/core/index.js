@@ -11,7 +11,7 @@ module.exports = class extends Generator {
    */
   constructor(args, opts) {
     // Disables npm install by default.
-    super(args, opts, {customInstallTask: (preferredPm) => { }});
+    super(args, opts, {customInstallTask: (preferredPm) => {}});
   }
 
   /**
@@ -20,23 +20,17 @@ module.exports = class extends Generator {
    * @since 1.0.0
    */
   writing() {
-    const appDash = this.appname
-        .trim()
-        .replace(/[ -]/g, '-')
-        .toLowerCase();
+    const appDash = this.appname.trim().replace(/[ -]/g, '-').toLowerCase();
     const appNoSpaces = appDash.replace(/-/g, '');
 
     const templateAtts = {
       appDash: appDash,
       appNoSpaces: appNoSpaces,
+      needsMapping: false,
     };
 
     // process files requiring template vars
-    [,
-      'Makefile',
-      '_.lando.yml',
-      'README.md',
-    ].forEach((template) => {
+    [, 'Makefile', '_.lando.yml', 'README.md'].forEach((template) => {
       let destination = template;
       if (destination[0] == '_') {
         destination = destination.substring(1);

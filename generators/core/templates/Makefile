@@ -58,14 +58,17 @@ ifdef HAS_LANDO
 	fi
 endif
 
+.PHONY: open
+open: ## Open the development site in your default browser
+	open https://<%= pluginDash %>.lndo.site
+
 .PHONY: open-db
 open-db: ## Open the database in TablePlus
 	@echo "Opening the database for direct access"
 	open mysql://wordpress:wordpress@127.0.0.1:$$(lando info --service=database --path 0.external_connection.port | tr -d "'")/wordpress?enviroment=local&name=$database&safeModeLevel=0&advancedSafeModeLevel=0
 
 .PHONY: open-site
-open-site: ## Open the development site in your default browser
-	open https://<%= appDash %>.lndo.site
+open-site: open
 
 .PHONY: reset
 reset: destroy start ## Resets a running dev environment to new

@@ -13,9 +13,7 @@ services:
       - appserver
   appserver:
     xdebug: debug
-    overrides:
-      volumes:
-        - ./plugin:/app/wordpress/wp-content/plugins/<%= appDash %>
+
 tooling:
   xdebug-on:
     service: appserver
