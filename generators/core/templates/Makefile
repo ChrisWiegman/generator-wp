@@ -60,7 +60,7 @@ endif
 
 .PHONY: open
 open: ## Open the development site in your default browser
-	open https://<%= pluginDash %>.lndo.site
+	open https://<%= appDash %>.lndo.site
 
 .PHONY: open-db
 open-db: ## Open the database in TablePlus
