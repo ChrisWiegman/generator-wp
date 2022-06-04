@@ -20,7 +20,7 @@
   "homepage": "https://github.com/ChrisWiegman/generator-wp#readme",
   "dependencies": {
     "chalk": "^5.0.1",
-    "eslint": "^8.16.0",
+    "eslint": "^8.17.0",
     "eslint-config-google": "^0.14.0",
     "title-case": "^3.0.3",
     "yeoman-generator": "^5.6.1"
