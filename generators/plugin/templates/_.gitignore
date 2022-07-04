@@ -223,3 +223,6 @@ Docker/debug
 /build/
 clover.xml
 /languages/
+
+# VS Code log files
+/.vscode/*.log
