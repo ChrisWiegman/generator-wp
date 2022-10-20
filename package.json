@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/ChrisWiegman/generator-wp#readme",
   "dependencies": {
-    "chalk": "^5.0.1",
-    "eslint": "^8.23.0",
+    "chalk": "^5.1.2",
+    "eslint": "^8.25.0",
     "eslint-config-google": "^0.14.0",
     "title-case": "^3.0.3",
     "yeoman-generator": "^5.7.0"
