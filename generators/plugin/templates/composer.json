@@ -3,10 +3,10 @@
   "description": "<%= description %>",
   "minimum-stability": "stable",
   "require-dev": {
-    "phpunit/phpunit": "^9.5.25",
+    "phpunit/phpunit": "^9.5.26",
     "brain/monkey": "^2.6.1",
     "dealerdirect/phpcodesniffer-composer-installer": "v0.7.2",
-    "phpcompatibility/phpcompatibility-wp": "2.1.3",
+    "phpcompatibility/phpcompatibility-wp": "2.1.4",
     "wp-coding-standards/wpcs": "2.3.0"
   },
   "config": {
