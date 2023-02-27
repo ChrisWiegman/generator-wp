@@ -9,10 +9,10 @@
   "license": "GPLv2",
   "homepage": "<%= projectHome %>",
   "devDependencies": {
-    "eslint": "^8.32.0",
+    "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.4"
   },
   "scripts": {
     "lint": "eslint './src/**/*.{js,jsx}'",
