@@ -11,7 +11,7 @@ module.exports = class extends Generator {
    */
   constructor(args, opts) {
     // Disables npm install by default.
-    super(args, opts, {customInstallTask: (preferredPm) => {}});
+    super(args, opts, { customInstallTask: (preferredPm) => { } });
   }
 
   /**
@@ -25,9 +25,9 @@ module.exports = class extends Generator {
     // eslint-disable-next-line max-len
     const longOrgPrefixLowercase = this.answers.longOrgPrefix.toLowerCase();
     const pluginUnderscore = this.appname
-        .trim()
-        .replace(/[ .-]/g, '_')
-        .toLowerCase();
+      .trim()
+      .replace(/[ .-]/g, '_')
+      .toLowerCase();
     const pluginDash = pluginUnderscore.replace(/_/g, '-');
     const pluginNoSpaces = pluginDash.replace(/-/g, '');
     const pluginConst =
@@ -149,8 +149,8 @@ module.exports = class extends Generator {
       }
 
       this.fs.copy(
-          this.templatePath(template),
-          this.destinationPath(destination),
+        this.templatePath(template),
+        this.destinationPath(destination),
       );
     });
 
@@ -174,15 +174,15 @@ module.exports = class extends Generator {
       }
 
       this.fs.copyTpl(
-          this.templatePath(template),
-          this.destinationPath(destination),
-          templateAtts,
+        this.templatePath(template),
+        this.destinationPath(destination),
+        templateAtts,
       );
 
       this.fs.copyTpl(
-          this.templatePath('index.php'),
-          this.destinationPath(templateAtts.pluginDash + '.php'),
-          templateAtts,
+        this.templatePath('index.php'),
+        this.destinationPath(templateAtts.pluginDash + '.php'),
+        templateAtts,
       );
     });
   }
