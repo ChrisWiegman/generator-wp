@@ -12,7 +12,7 @@
   "keywords": [
     "yeoman-generator"
   ],
-  "author": "Chris Wiegman <chris@chriswiegman.com>",
+  "author": "Chris Wiegman <contact@chriswiegman.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ChrisWiegman/generator-wp/issues"
@@ -20,9 +20,9 @@
   "homepage": "https://github.com/ChrisWiegman/generator-wp#readme",
   "dependencies": {
     "chalk": "^5.3.0",
-    "eslint": "^8.47.0",
+    "eslint": "^8.56.0",
     "eslint-config-google": "^0.14.0",
     "title-case": "^3.0.3",
-    "yeoman-generator": "^5.9.0"
+    "yeoman-generator": "^5.10.0"
   }
 }
